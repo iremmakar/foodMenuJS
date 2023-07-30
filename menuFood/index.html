@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container menu">
+      <h1 class="menu-line">Menümüz</h1>
+
+      <div class="menu-filtre d-flex gap-3">
+        <button class="btn btn-outline-warning filter-btn" data-id="all">
+          Hepsi
+        </button>
+        <button class="btn btn-outline-warning filter-btn" data-id="breakfast">
+          Kahvaltı
+        </button>
+        <button class="btn btn-outline-warning filter-btn" data-id="lunch">
+          Öğle Yemeği
+        </button>
+        <button class="btn btn-outline-warning filter-btn" data-id="shakes">
+          İçecekler
+        </button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div
+        class="row row-cols-1 row-cols-md-2 d-flex justify-content-center gap-5"
+        id="menu-container"
+      ></div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js" type="module"></script>
+  </body>
+</html>

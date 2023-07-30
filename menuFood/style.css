@@ -1,0 +1,40 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8%;
+}
+
+.menu-line {
+  position: relative;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+.menu-line::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 50%;
+  height: 2px;
+  background-color: orange;
+  transform: translateX(-50%);
+}
+
+@media (min-width: 769px) {
+  #card {
+    max-width: 500px;
+  }
+
+  #card img {
+    width: 100px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 769px) {
+  #card img {
+    height: 240px;
+  }
+}
